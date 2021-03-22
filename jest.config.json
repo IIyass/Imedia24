@@ -1,0 +1,16 @@
+{
+  "name": "media24",
+  "moduleFileExtensions": [
+    "js",
+    "jsx",
+    "tsx",
+    "ts"
+  ],
+  "rootDir": "src/tests/",
+  "preset": "jest-puppeteer",
+  "transform": {
+    "^.+\\.(js?)$": "babel-jest"
+  },
+  "testTimeout": 50000
+}
+

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonCard should render my pokemon card 1`] = `
+Array [
+  <styled.div>
+    <h1>
+      pikatchu
+    </h1>
+  </styled.div>,
+]
+`;
