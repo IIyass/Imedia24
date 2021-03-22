@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { string } from "prop-types";
 
-const PokemonCardContainer = styled.div`
+const PokemonCardContainer = styled.div.attrs((props) => ({
+  className: props.className,
+}))`
   cursor: pointer;
   border: 2px solid #2a75bb;
   display:flex;
@@ -20,7 +22,7 @@ const PokemonCardContainer = styled.div`
   }
 `;
 const PokemonCard = ({ name }) => (
-  <PokemonCardContainer>
+  <PokemonCardContainer className="pokemonCard">
     <h1>{name}</h1>
   </PokemonCardContainer>
 );

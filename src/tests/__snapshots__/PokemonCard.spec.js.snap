@@ -2,7 +2,9 @@
 
 exports[`PokemonCard should render my pokemon card 1`] = `
 Array [
-  <styled.div>
+  <styled.div
+    className="pokemonCard"
+  >
     <h1>
       pikatchu
     </h1>

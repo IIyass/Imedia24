@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
-export const ModalBackground = styled.div`
+export const ModalBackground = styled.div.attrs((props) => ({
+  className: props.className,
+}))`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +36,9 @@ const ModalFadeInKeyframes = keyframes`
   }
 `;
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled.div.attrs((props) => ({
+  className: props.className,
+}))`
   background: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 10px;

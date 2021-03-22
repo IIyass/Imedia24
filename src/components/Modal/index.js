@@ -5,8 +5,9 @@ import { ModalBackground, ModalContainer } from "./style";
 
 const Modal = ({ open, onClose, children }) => {
   const modalContent = (
-    <ModalBackground onMouseDown={onClose}>
+    <ModalBackground className="modalBackground" onMouseDown={onClose}>
       <ModalContainer
+      className="modalContainer"
         onMouseDown={(event) => {
           event.stopPropagation();
           return false;

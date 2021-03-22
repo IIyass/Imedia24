@@ -12,7 +12,9 @@ export const ErrorContainer = styled.h2`
   text-align: center;
 `;
 
-export const PokemonsContainer = styled.div`
+export const PokemonsContainer = styled.div.attrs((props) => ({
+  className: props.className,
+}))`
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 4rem;

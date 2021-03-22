@@ -3,7 +3,9 @@ import styled from "styled-components";
 import media from "Devices";
 import { string, array, number } from "prop-types";
 
-const DetailedCardContainer = styled.div`
+const DetailedCardContainer = styled.div.attrs((props) => ({
+  className: props.className,
+}))`
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -42,7 +44,7 @@ const DetailedCardContainer = styled.div`
 `;
 
 const DetailedCard = ({ name, weight, height, location }) => (
-  <DetailedCardContainer>
+  <DetailedCardContainer className="detailedCard">
     <h1>
       Pokemon Name : <span>{name}</span>{" "}
     </h1>

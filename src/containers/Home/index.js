@@ -69,14 +69,14 @@ const Home = (props) => {
           />
         )}
       </Modal>
-      <Title>Pokemons</Title>
+      <Title className="title">Pokemons</Title>
       {loading ? (
         <LoadingIdecator />
       ) : serverErrMessages ? (
         <ErrorContainer>{serverErrMessages}</ErrorContainer>
       ) : (
         <>
-          <PokemonsContainer>
+          <PokemonsContainer className="pokemonContainer">
             {allPokemons.map(({ name }, index) =>
               allPokemons.length === index + 1 ? (
                 <div
