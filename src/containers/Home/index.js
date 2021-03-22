@@ -5,6 +5,8 @@ import { compose } from "redux";
 import { pokemonActions } from "store/pokemon/reducer";
 import PokemonCard from "components/PokemonCard";
 import DetailedCard from "components/DetailedCard";
+import LoadingIdecator from "../../components/LoadingIndecator";
+import Modal from "../../components/Modal";
 
 import {
   Wrapper,
@@ -13,8 +15,7 @@ import {
   PokemonsContainer,
   Title,
 } from "./style";
-import LoadingIdecator from "../../components/LoadingIndecator";
-import Modal from "../../components/Modal";
+
 
 const Home = (props) => {
   const {
